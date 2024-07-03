@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "cafenodejs";
+$servername = "database-1.cwx35jq5nqww.us-east-1.rds.amazonaws.com";
+$username = "admin2510";
+$password = "w5w=j;9Em0~9";
+$dbname = "AppDatabase1";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
