@@ -2,6 +2,10 @@
 include 'config.php';
 
 $result = $conn->query("SELECT * FROM patients");
+
+$host= gethostname();
+$ip = gethostbyname($host);
+
 ?>
 
 <!DOCTYPE html>
@@ -12,7 +16,7 @@ $result = $conn->query("SELECT * FROM patients");
 </head>
 <body>
 <div class="container mt-5">
-    <h2 class="text-center mb-4">Clinic Management System</h2>
+    <h2 class="text-center mb-4">Clinic Management System <?php echo $ip; ?></h2>
     <table class="table table-bordered">
         <thead class="thead-light">
         <tr>
